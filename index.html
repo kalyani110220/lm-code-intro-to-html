@@ -1,33 +1,31 @@
-<fixme>
-	<fixme lang="fr">
-
-	<fixme>
-    	<fixme charset="UTF-8">
+<!DOCTYPE html>
+	<html lang="fr">
+	<head>
+    	<meta charset="UTF-8">
     	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    	<fixme>Tech Returners Surgery: Home</fixme>
-	</fixme>
-
-	<fixme>
-		<fixme>
+    	<title>Tech Returners Surgery: Home</title>
+	</head>
+	<body>
+		<center>
 			<a href="#">Tech Returners Surgery</a>
 			<a href="tel:03330509138">0333 050 9138</a>
-		</fixme>
-
-		<fixme>
-			<fixme>
-				<fixme><a href="#">Home</a></fixme>
-				<fixme><a href="#">Services</a></fixme>
-				<fixme><a href="#">Team</a></fixme>
-				<fixme><a href="#">Patient Information</a></fixme>
-				<fixme><a href="#">Well-being Centre</a></fixme>
-			</fixme>
-		</fixme>
+		</center>
+		<br>
+		<nav>
+			<div id="mySidenav" class="sidenav">
+				<link><a href="#">Home</a></link>
+				<link><a href="#">Services</a></link>
+				<link><a href="#">Team</a></link>
+				<link><a href="#">Patient Information</a></link>
+				<link><a href="#">Well-being Centre</a></link>
+			</div>
+		</nav>
+		<br>
 
 		<label for="site-search">Search...</label>
 		<input type="search" id="site-search" name="search" aria-label="Search through site content">
-		<fixme>Search</fixme>
-
+		<input type="submit" value="Search" onclick="show()">
 		<section>
 			<h3><fixme>COVID Restriction Update</fixme></h3>
 
@@ -44,36 +42,37 @@
 		</section>
 
 
-		<fixme>
-			<fixme>Welcome to the Tech Returners Surgery!</fixme>
+		<div>
+			<h1>Welcome to the Tech Returners Surgery!</h1>
 
-			<fixme src="./surgery.png">
+			<img src="./surgery.png"width="300" height="200">
+		   
 
-			<fixme> The Tech Returners Surgery,<br>
+			<address> The Tech Returners Surgery,<br>
 				115 Mancunian Way,<br>
 				Manchester,<br>
 				M20 3PX
-			</fixme>
-		</fixme>
+			</address>
+		</div>
 
 		<section>
 			<h2>How to use Ask My Doc?</h2>
 
-			<fixme controls width="250">
+			<vedio controls width="250">
 				<source src="#" type="video/webm">
 				<source src="#" type="video/mp4">
 
 				<track kind="captions" srclang="en" src="./ask_my_doc_transcript.vtt" default />
 
 				Sorry, your browser doesn't support embedded videos.
-			</fixme>
+			</vedio>
 		</section>
 
 
 		<section>
 			<h2>Need advice or have some feedback for us?</h2>
 
-			<fixme>
+			<table>
 				<fieldset>
 					<legend>Send us a message by filling out the form below and one of our Receptionists will be in touch:
 					</legend>
@@ -85,21 +84,26 @@
 
 					<label for="another">Someone else </label>
 					<input type="checkbox" id="another" name="another">
+					<br>
 
 
 					<div>
 						<label for="fname">First Name </label>
 						<input type="text" id="fname" name="fname" required>
 					</div>
+					<br>
 
 					<div>
 						<label for="lname">Last Name </label>
-						<input type="text" id="lname" name="lname" required>
+						<input type="text"  class='center' id="lname" name="lname" required>
 					</div>
-
+                       <br>
 					<div>
 						<label for="dob">Date of Birth </label>
-						<input type="date" id="dob" name="dob" required>
+						<!-- <input type="date" id="dob" name="dob" required> -->
+						
+							<input type='date' class='center' id="dob" name="dob" required="required">
+						
 					</div>
 
 					<div>
@@ -119,7 +123,7 @@
 
 					<input type="submit" value="Submit">
 				</fieldset>
-			</fixme>
-		</fixme>
-	</fixme>
-</fixme>
+			</table>
+			</section>
+	</body>
+	</html>
